@@ -18,7 +18,7 @@ export class EtcdService {
     let options: RequestOptions = new RequestOptions();
     options.search = params;
     return this.http.get(this._urlPrefix, options).map(
-      response => {console.log(response.json().data); return response.json().data;},
+      response => {console.log(response.json()); return response.json();},
       error => console.log(error)
     )//.catch(
     //   error => {console.log(error); return error;}

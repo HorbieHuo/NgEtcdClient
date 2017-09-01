@@ -2,8 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { HttpModule } from '@angular/http';
-
-import { MdButtonModule } from '@angular/material';
+import { NgZorroAntdModule } from 'ng-zorro-antd';
 
 import { EtcdService } from './utils';
 
@@ -19,7 +18,7 @@ import { HomeComponent } from './home/home.component';
     BrowserModule,
     BrowserAnimationsModule,
     HttpModule,
-    MdButtonModule
+    NgZorroAntdModule.forRoot()
   ],
   providers: [
     EtcdService
